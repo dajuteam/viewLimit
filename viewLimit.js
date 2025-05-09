@@ -71,7 +71,8 @@
             localStorage.removeItem("viewLimit_isVerified");
             localStorage.removeItem("viewLimit_verifiedTime");
             localStorage.removeItem("viewLimit_errorCount");
-            location.reload();
+             // ✅ 等待 localStorage 確實寫入後再 reload
+            setTimeout(() => location.reload(), 100);
           }
       
           // ✅ 提示輸入密碼（可從錯誤畫面點「我知道密碼了」再次輸入）
