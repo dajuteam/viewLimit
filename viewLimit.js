@@ -27,8 +27,8 @@
             // if (!isWithinActivePeriod()) return; // ⛔ 不在期間 → 不啟動驗證功能
 
             // ✅ 設定參數
-            const viewLimitPassword = "0410";  // 正確密碼
-            const viewLimitDelay = 60000; // 10秒（10000毫秒）
+            const viewLimitPassword = "0410";  
+            const viewLimitDelay = 60000;
             const maxErrorCount = 2;
             const skipVerifyDuration = 48 * 60 * 60 * 1000; // 48小時
 
@@ -60,18 +60,18 @@
     `;
 
                 dialog.innerHTML = `
-        <div style="background-color: #2563eb; color: white; padding: 10px 16px; border-top-left-radius: 6px; border-top-right-radius: 6px; font-weight: bold;">
-           🍊大橘公告
+        <div style="background-color: #eb6100; color: white; padding: 10px 16px; border-top-left-radius: 6px; border-top-right-radius: 6px; font-weight: bold;">
+           🍊大橘網站公告
         </div>
         <div style="padding: 20px; font-size: 16px; color: #333;">
-            <p style="margin: 0 0 10px;">假日流量控管！供大橘同仁優先使用</p>
+            <p style="margin: 0 0 10px;">網站假日流量控管！大橘同仁優先使用</p>
             <p style="margin: 0 0 10px;">有其他需求請聯絡大橘總機</p>
             <p style="margin: 0 0 20px;">
               LINE@：
               <a href="https://lin.ee/s7ayOROf" target="_blank" style="color: #2563eb; text-decoration: underline;">@265ckfky</a>
             </p>
             <div style="text-align: right;">
-              <button id="viewLimitRetryBtn" style="font-size: 14px; padding: 6px 12px; background-color: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer;">
+              <button id="viewLimitRetryBtn" style="font-size: 14px; padding: 6px 12px; background-color: #eb6100; color: white; border: none; border-radius: 4px; cursor: pointer;">
                 我知道密碼了
               </button>
             </div>
