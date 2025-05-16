@@ -56,7 +56,9 @@
         background-color: white;
         border: 1px solid #ccc;
         box-shadow: 0 0 12px rgba(0,0,0,0.6);
-        width: 500px;
+         width: 100%;
+    max-width: 500px;
+    margin: 0 10px;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
@@ -81,8 +83,8 @@
             color: #333;
             flex-grow: 1;
         ">
-            <p style="margin: 0 0 16px;">網站假日流量控管！大橘同仁優先使用</p>
-            <p style="margin: 0 0 16px;">有其他需求請聯絡大橘總機</p>
+            <p style="margin: 0 0 14px;">網站假日流量控管！大橘同仁優先使用</p>
+            <p style="margin: 0 0 14px;">有其他需求請聯絡大橘總機</p>
             <p style="margin: 0 0 30px;">
               LINE@：
               <a href="https://lin.ee/s7ayOROf" target="_blank" style="color: #2563eb; text-decoration: underline; font-weight: 600;">
