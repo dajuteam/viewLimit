@@ -45,7 +45,7 @@
                 const wrapper = document.createElement("div");
                 wrapper.style.cssText = `
         position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(255, 255, 255, 1); z-index: 9999;
+        background: rgba(255, 255, 255, 0.9); z-index: 9999;
         display: flex; align-items: center; justify-content: center;
         font-family: "Segoe UI", sans-serif;
     `;
