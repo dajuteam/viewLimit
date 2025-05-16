@@ -41,41 +41,80 @@
             const stillValid = isVerified && (now - verifiedTime < skipVerifyDuration);
 
             // ✅ 顯示錯誤畫面（Windows 錯誤視窗風格）
-            function showErrorPage() {
-                const wrapper = document.createElement("div");
-                wrapper.style.cssText = `
+           function showErrorPage() {
+    const wrapper = document.createElement("div");
+    wrapper.style.cssText = `
         position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(255, 255, 255, 0.9); z-index: 9999;
+        background: rgba(255, 255, 255, 1);
+        z-index: 9999;
         display: flex; align-items: center; justify-content: center;
         font-family: "Segoe UI", sans-serif;
     `;
 
-                const dialog = document.createElement("div");
-                dialog.style.cssText = `
+    const dialog = document.createElement("div");
+    dialog.style.cssText = `
         background-color: white;
         border: 1px solid #ccc;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        width: 400px;
-        border-radius: 6px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.6);
+        width: 500px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     `;
 
-                dialog.innerHTML = `
-        <div style="background-color: #eb6100; color: white; padding: 10px 16px; border-top-left-radius: 6px; border-top-right-radius: 6px; font-weight: bold;">
-           🍊大橘網站公告
+    dialog.innerHTML = `
+        <div style="
+            background-color: #eb6100; 
+            color: white; 
+            padding: 14px 20px; 
+            border-top-left-radius: 8px; 
+            border-top-right-radius: 8px; 
+            font-weight: bold; 
+            font-size: 22px;
+        ">
+           🍊 大橘網站公告
         </div>
-        <div style="padding: 20px; font-size: 16px; color: #333;">
-            <p style="margin: 0 0 10px;">網站假日流量控管！大橘同仁優先使用</p>
-            <p style="margin: 0 0 10px;">有其他需求請聯絡大橘總機</p>
-            <p style="margin: 0 0 20px;">
+        <div style="
+            padding: 28px 30px 20px 30px; 
+            font-size: 18px;
+            color: #333;
+            flex-grow: 1;
+        ">
+            <p style="margin: 0 0 16px;">網站假日流量控管！大橘同仁優先使用</p>
+            <p style="margin: 0 0 16px;">有其他需求請聯絡大橘總機</p>
+            <p style="margin: 0 0 30px;">
               LINE@：
-              <a href="https://lin.ee/s7ayOROf" target="_blank" style="color: #2563eb; text-decoration: underline;">@265ckfky</a>
+              <a href="https://lin.ee/s7ayOROf" target="_blank" style="color: #2563eb; text-decoration: underline; font-weight: 600;">
+                @265ckfky
+              </a>
             </p>
-            <div style="text-align: right;">
-              <button id="viewLimitRetryBtn" style="font-size: 14px; padding: 6px 12px; background-color: #eb6100; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            <div style="text-align: center;">  <!-- 按鈕置中 -->
+              <button id="viewLimitRetryBtn" style="
+                font-size: 16px; 
+                padding: 10px 18px; 
+                background-color: #eb6100; 
+                color: white; 
+                border: none; 
+                border-radius: 6px; 
+                cursor: pointer;
+                font-weight: 600;
+              ">
                 我知道密碼了
               </button>
             </div>
         </div>
+        <a href="https://lin.ee/s7ayOROf" target="_blank" style="
+            display: block;
+            width: 100%;       /* 橫幅寬度調整為滿版 */
+            cursor: pointer;
+            text-decoration: none;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            overflow: hidden;
+        ">
+          <img src="https://www.dajuteam.com.tw/upload/web/images/assets/daju-store-banner.gif?v=2" alt="大橘橫幅廣告" style="width: 100%; height: auto; display: block;">
+        </a>
     `;
 
                 wrapper.appendChild(dialog);
