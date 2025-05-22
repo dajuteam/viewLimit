@@ -24,7 +24,7 @@
                 );
             }
 
-            // if (!isWithinActivePeriod()) return; // ⛔ 不在期間 → 不啟動驗證功能
+            if (!isWithinActivePeriod()) return; // ⛔ 不在期間 → 不啟動驗證功能
 
             // ✅ 設定參數
             const viewLimitPassword = "0410";  
