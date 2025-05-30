@@ -27,7 +27,7 @@
             if (!isWithinActivePeriod()) return; // ⛔ 不在期間 → 不啟動驗證功能
 
             // ✅ 設定參數
-            const viewLimitPassword = "0902";  
+            const viewLimitPassword = "0320";  
             const viewLimitDelay = 60000;
             const maxErrorCount = 2;
             const skipVerifyDuration = 48 * 60 * 60 * 1000; // 48小時
