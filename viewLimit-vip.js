@@ -1,9 +1,9 @@
 
 window.addEventListener("DOMContentLoaded", function () {
   // === 可調整參數 ===
-  const viewLimitPassword = "0507";                 // ✅ 密碼
-  const skipVerifyDuration = 48 * 60 * 60 * 1000;   // ✅ 通過後 48 小時免驗證
-  const countdownSeconds = 3;                       // ✅ 倒數秒數
+  const viewLimitPassword = "0507";                 
+  const skipVerifyDuration = 12 * 60 * 60 * 1000;   
+  const countdownSeconds = 3;                      
 
   // 讀取驗證狀態
   const now = Date.now();
