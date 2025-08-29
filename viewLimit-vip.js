@@ -112,7 +112,7 @@ window.addEventListener("DOMContentLoaded", function () {
     subtitle.style.cssText = "font-size:16px; color:#4b5563; margin-bottom:22px;";
 
     const linkBtn = document.createElement("a");
-    linkBtn.href = "https://www.facebook.com/profile.php?id=61558803181682&mibextid=LQQJ4d";
+    linkBtn.href = "https://www.facebook.com/dajuteam";
     linkBtn.target = "_blank";
     linkBtn.rel = "noopener";
     linkBtn.textContent = "前往大橘團隊粉絲專頁";
